@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><img src="./image/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+    </nav>
+    <div class="checkfst">
+        <div>
+
+            <h1>CHECKOUT</h1>
+            <p>You won't be charged until your first order ships.</p>
+
+            <div>
+                <h1>Delivery Information</h1>
+                <form action="">
+                    <label for="">FIRST NAME</label><br>
+                    <input type="text"><br>
+                    <label>LAST NAME</label><br>
+                    <input type="text"><br>
+                    <label for="">ADRESS</label><br>
+                    <input type="text"><br>
+                    <label for="">ZIP</label><br>
+                    <input type="number"><br>
+                    <label for="">CITY</label><br>
+                    <input type="text"><br>
+                    <label for="">PHONE</label><br>
+                    <input type="number"><br>
+                    <input type="submit" value="CHECKOUT" readonly>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h1>Order Summary</h1>
+            <h3>First delivery date</h3>
+            <div>
+                <h3>Total payable amount</h3>
+                <p></p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>© Blue Apron, LLC 2022 | A better way to cook</p>
+        </div>
+        <div>
+            <p>Don't "Sell" My Data</p>
+            <p> Ad Preferences</p>
+            <p> Privacy Policy </p>
+            <p> Terms of Use</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector(".checkfst div:nth-child(2) div p").innerText = localStorage.getItem("total price");
+        document.querySelector(".checkfst div:nth-child(1) div form ").addEventListener("submit", () => {
+            alert("ThankYou for Shopping! ")
+        })
+    </script>
+</body>
+
+</html>

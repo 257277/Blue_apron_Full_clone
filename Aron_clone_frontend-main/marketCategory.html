@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="./Nav/nav.css">
+    <link rel="stylesheet" href="marketCategory.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+            <a href="./index.html"> <img src="/image/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+            <div class="a">
+                <a href="./menu.html">MENU</a>
+                <a href="./pricing.html">PRICING</a>
+                <a href="./wine.html">WINE</a>
+                <a href="./gift.html">GIFTS</a>
+                <a href="./market.html">MARKET</a>
+                <a href="./cart.html">CART</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <button class="login"><a href="./login.html">LOGIN</a></button>
+            <button class="signup"><a href="./signup.html">SIGNUP</a></button>
+        </div>
+    </div>
+    <!-- ................................................................................................................... -->
+    <div class="marfst">
+        <div class="marfst1">
+            <p onclick="myfun2(event)">Meal Kits</p>
+            <p onclick="myfun2(event)">Wine Bundles</p>
+            <p onclick="myfun2(event)">Pantry</p>
+            <p onclick="myfun2(event)">Kitchen Tools</p>
+        </div>
+    </div>
+    <div class="cfst">
+        <h1> </h1>
+    </div>
+    <div class="csnd"></div>
+
+
+
+    <!-- ................................................................................................................... -->
+    <footer>
+        <div class="footer">
+            <div class="tbl">
+                <ul>
+                    <li>On The Menu</li>
+                    <li>Pricing</li>
+                    <li>Our Vision</li>
+                    <li>Wine</li>
+                    <li>Market</li>
+                    <li>Gifts</li>
+                    <li>Blog</li>
+                    <li>Cookbook</li>
+                </ul>
+                <ul>
+                    <li>Suppliers</li>
+                    <li>Affiliates</li>
+                    <li>Supply Chains Act</li>
+                    <li>Food Safety</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Our Team</li>
+                    <li>Investor Relations</li>
+                </ul>
+                <ul>
+                    <li>Military & Veterans</li>
+                    <li>Students</li>
+                    <li>Teachers</li>
+                    <li>Seniors (+55)</li>
+                    <li>Medical Staff</li>
+                    <li>First Responders</li>
+                </ul>
+                <ul>
+                    <li style="color: white;">Customer Support:</li>
+                    <li>Help Center & FAQ</li>
+                    <li>Covid-19 Updates</li>
+                    <li>contact@blueapron.com</li>
+                    <li>(646) 891-4349</li>
+
+                </ul>
+
+            </div>
+            <div class="ap">
+                <ul>
+                    <li style="color: white;">© Blue Apron, LLC 2022</li>
+                    <li>Do Not "Sell" My Info</li>
+                    <li>Ad Preferences</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li><img src="https://logodownload.org/wp-content/uploads/2017/05/disponivel-na-app-store-botao-5.png"
+                            alt=""></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/800px-Google_Play_Store_badge_EN.svg.png"
+                            alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <p>If you are using a screen reader and are having problems using this website, please call 1-844-462-8299 for
+            assistance.</p>
+    </footer>
+    <script>
+        let c = JSON.parse(localStorage.getItem("category"));
+        document.querySelector(".cfst h1").innerText = c;
+        let mealurl = "http://localhost:4500/meal"
+        let wineurl = "http://localhost:4500/wine"
+        let pantryurl = "http://localhost:4500/Pentry"
+        let kitchenurl = "http://localhost:4500/kitchen"
+        let data = [];
+        async function myfun() {
+            try {
+                let req;
+                if (c == "Meal") {
+                    localStorage.setItem("category", JSON.stringify("Meal"));
+                    document.querySelector(".cfst h1").innerText = c;
+                    req = await fetch(mealurl,
+                        {
+                            method: "GET",
+                            headers: {
+                                "Content-Type": "application/json",
+                            }
+                        });
+                }
+                else if (c == "Wine") {
+                    localStorage.setItem("category", JSON.stringify("Wine"));
+                    document.querySelector(".cfst h1").innerText = c;
+                    req = await fetch(wineurl, {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                        }
+                    });
+                }
+                else if (c == "Pantry") {
+                    localStorage.setItem("category", JSON.stringify("Pantry"));
+                    document.querySelector(".cfst h1").innerText = c;
+                    req = await fetch(pantryurl, {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                        }
+                    });
+                }
+                else {
+                    localStorage.setItem("category", JSON.stringify("Kitchen"));
+                    document.querySelector(".cfst h1").innerText = c;
+                    req = await fetch(kitchenurl, {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                        }
+                    });
+                }
+                let res = await req.json();
+                data = res;
+
+                display(data);
+                addBtn(data);
+
+            }
+            catch (err) {
+
+            }
+        }
+        myfun();
+        function display(data) {
+            let arr = data.map((item) => {
+                if (item.subtitle != undefined) {
+                    return `<div>
+                <img src="${item.image}" >
+                <h1>${item.title}</h1>
+                <p>${item.subtitle}</p>
+                <h3>$${item.price}</h3>
+                <button id="${item._id}">ADD TO CART</button>
+            </div>`
+                }
+                else {
+                    return `<div>
+                <img src="${item.image}">
+                <h1>${item.title}</h1>
+
+                <h3>$${item.price}</h3>
+                <button id="${item._id}">ADD TO CART</button>
+             
+            </div>`
+                }
+            })
+            let arr1 = arr.join("");
+            document.querySelector(".csnd").innerHTML = arr1;
+        }
+        function myfun2(event) {
+            let z = event.target.innerText;
+            if (z == "Meal Kits") {
+                c = "Meal";
+                myfun();
+            }
+            else if (z == "Wine Bundles") {
+                c = "Wine";
+                myfun();
+            }
+            else if (z == "Pantry") {
+                c = "Pantry";
+                myfun();
+            }
+            else {
+                c = "Kitchen";
+                myfun();
+            }
+        }
+
+        function addBtn(data) {
+            let addBtns = document.querySelectorAll(".csnd div button");
+
+            for (let addBtn of addBtns) {
+                addBtn.addEventListener("click", (event) => {
+                    let arr = JSON.parse(localStorage.getItem("Cart")) || [];
+                    let id = event.target.id;
+                    data.map((item) => {
+                        if (item._id == id) {
+                            arr.push(item);
+                        }
+                    })
+
+                    localStorage.setItem("Cart", JSON.stringify(arr));
+                    alert("Item is Added To Cart");
+                })
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

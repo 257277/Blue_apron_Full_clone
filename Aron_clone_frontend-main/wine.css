@@ -1,0 +1,289 @@
+.wfst {
+    background-image: url("https://media.blueapron.com/assets/wine/wine-hero.webp");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+
+}
+
+.wfst div {
+    width: 30%;
+
+    text-align: center;
+    float: right;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.wfst div h1 {
+    font-size: 50px;
+    color: #002c9b;
+}
+
+.wfst div p {
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(5, 184, 255);
+}
+
+.wfst div button {
+    margin-top: 30px;
+    background-color: #002c9b;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+}
+
+.wsnd {
+
+    height: 400px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.wsnd .wsnd1 {
+    padding-top: 3%;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.wsnd .wsnd1 div {
+
+    text-align: center;
+    height: 120%;
+}
+
+.wsnd .wsnd1 div p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+}
+
+.wsnd .wsnd1 div img {
+    width: 40%;
+    height: 40%;
+}
+
+.wthrd {
+    background-image: url("https://media.blueapron.com/assets/wine/wine-box.webp");
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+
+.wthrd1 {
+    width: 20%;
+    height: 80%;
+    float: right;
+
+    background-color: white;
+    margin-top: 1%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.wthrd11 p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.wthrd12 {
+    margin-top: 20px;
+
+}
+
+.wthrd12 p:nth-child(1) {
+    font-size: 20px;
+    color: rgb(5, 184, 255);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wthrd12 p:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.wthrd button {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #002c9b;
+    color: white;
+}
+
+.wfrth {
+
+    height: 600px;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+.wfrth h1 {
+    width: 40%;
+    font-size: 40px;
+    margin: auto;
+}
+
+.wfrth p {
+    width: 40%;
+    font-size: 25px;
+    margin: auto;
+    color: gray;
+    margin-top: 20px;
+}
+
+.wfrth img {
+    width: 60%;
+    margin: auto;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.wfth {
+    background-image: url("https://media.blueapron.com/assets/wine/wine-learn.webp");
+    height: 600px;
+    background-size: cover;
+}
+
+.wfth1 {
+    width: 20%;
+
+    margin-left: 20%;
+    padding-top: 4%;
+    color: white;
+}
+
+.wfth1 h1 {
+    margin-bottom: 20px;
+}
+
+.wfth1 p {
+    font-size: 20px;
+}
+
+.wsxth {
+    height: 1000px;
+
+    text-align: center;
+    padding-top: 5%;
+}
+
+.wsxth h1 {
+    width: 30%;
+    margin: auto;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.wsxth p {
+    width: 40%;
+    margin: auto;
+    font-size: 20px;
+    color: gray;
+}
+
+.wsxth img {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.wsth {
+    background-image: url("https://media.blueapron.com/assets/wine/wine-footer.webp");
+    height: 450px;
+    margin-top: 50px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+
+.wsth h1 {
+    position: relative;
+    top: 30%;
+}
+
+.wsth button {
+    position: relative;
+    top: 40%;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #002c9b;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(16, 52, 108, 255);
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+
+.footer .tbl {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .tbl ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255);
+
+}
+
+.footer .tbl ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap {
+    text-align: right;
+}
+
+.footer .ap ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255)
+}
+
+.footer .ap ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap li img {
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}

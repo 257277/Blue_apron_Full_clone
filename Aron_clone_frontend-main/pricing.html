@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="./Nav/nav.css">
+    <link rel="stylesheet" href="./pricing.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+            <a href="./index.html"> <img src="/image/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+            <div class="a">
+                <a href="./menu.html">MENU</a>
+                <a href="./pricing.html">PRICING</a>
+                <a href="./wine.html">WINE</a>
+                <a href="./gift.html">GIFTS</a>
+                <a href="./market.html">MARKET</a>
+                <a href="./cart.html">CART</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <button class="login"><a href="./login.html">LOGIN</a></button>
+            <button class="signup"><a href="./signup.html">SIGNUP</a></button>
+        </div>
+    </div>
+    <!-- ............................................. -->
+    <div class="gfst">
+        <h1>Personalize your meal kit</h1>
+        <p>Get excited—your choice of 60+ weekly meals is just a few steps away!</p>
+    </div>
+    <div class="gsnd">
+        <div>
+            <h1>1. Tell us your preferences</h1>
+            <button class="gsnd1" onmousedown="myfun1()">
+                <div class="icon">
+                    <img src="https://media.blueapron.com/assets/registration/icons/plansAndPricing/chef-favorites-icon.svg"
+                        alt="">
+                </div>
+                <div class="choice">
+                    <p>Chef favorite</p>
+                    <p>Our Test Kitchen's top picks</p>
+                </div>
+            </button>
+            <button class="gsnd2" onmousedown="myfun2()">
+                <div class="icon">
+                    <img src="https://media.blueapron.com/assets/registration/icons/plansAndPricing/wellness-icon.svg"
+                        alt="">
+                </div>
+                <div class="choice">
+                    <p>Wellness</p>
+                    <p>Nutritionist-approved recipes, plus WW Recommended selections</p>
+                </div>
+            </button>
+            <button class="gsnd3" onmousedown="myfun3()">
+                <div class="icon">
+                    <img src="https://media.blueapron.com/assets/registration/icons/plansAndPricing/family-icon.svg"
+                        alt="">
+                </div>
+                <div class="choice">
+                    <p> Family Friendly</p>
+                    <p>Kid-friendly meals the whole family will love</p>
+                </div>
+            </button>
+            <button class="gsnd4" onmousedown="myfun4()">
+                <div class="icon">
+                    <img src="https://media.blueapron.com/assets/registration/icons/plansAndPricing/fast-easy-icon.svg"
+                        alt="">
+                </div>
+                <div class="choice">
+                    <p>Fast & Easy</p>
+                    <p>Time-saving meals including Quick Prep and Heat & Eat options</p>
+                </div>
+            </button>
+            <button class="gsnd5" onmousedown="myfun5()">
+                <div class="icon">
+                    <img src="https://media.blueapron.com/assets/registration/icons/plansAndPricing/veggies-icon.svg"
+                        alt="">
+                </div>
+                <div class="choice">
+                    <p>Veggies </p>
+                    <p>Our delicious plant-based meals</p>
+                </div>
+            </button>
+        </div>
+
+        <div>
+            <h1>2. Select your plan</h1>
+            <div>
+                <h3>Number of servings</h3>
+                <input value="2" readonly onclick="serving(event)">
+                <input value="4" readonly onclick="serving(event)">
+            </div>
+            <div>
+                <h3>Meals per week</h3>
+                <input value="2" readonly onclick="meal(event)">
+                <input value="3" readonly onclick="meal(event)">
+                <input value="4" readonly onclick="meal(event)">
+            </div>
+            <div>
+                <h3>Order Summary</h3>
+                <div>
+                    <p>Price per serving</p>
+                    <p class="ps">$11.99</p>
+                </div>
+                <div>
+                    <p>Shipping</p>
+                    <p>$9.99</p>
+                </div>
+                <div>
+                    <p>First order subtotal</p>
+                    <p class="pt">$57.95</p>
+                </div>
+            </div>
+            <div>
+                <button onclick="fun6()">CONTINUE</button>
+                <p>You can update your preferences
+                    and skip, pause, or cancel at any time.</p>
+            </div>
+        </div>
+    </div>
+    <div class="gtrd">
+        <h2>WHY CHOOSE A</h2>
+        <h1>Blue Apron Meal Kit?</h1>
+        <div class="gtrd1">
+            <div>
+                <h3>Well-balanced meals</h3>
+                <p>Choose from an ever-changing mix of menu options featuring meat, poultry, fish, seafood, Beyond Meat™
+                    (plant-based meat), WW™ Approved, diabetes-friendly recipes, and more.</p>
+            </div>
+            <div>
+                <h3>Chef-approved recipes</h3>
+                <p>Our Test Kitchen chefs are in pursuit of dishes that are not just good but special, bringing
+                    something extraordinary to your home cooking experience.</p>
+            </div>
+            <div>
+                <h3>Your plan, your way</h3>
+                <p>Cooking with us is always on your terms. Adjust your servings and delivery day based on that week's
+                    needs. Need to skip a week or cancel? No problem. As long as your order hasn't been processed, you
+                    won't be charged.</p>
+            </div>
+            <div>
+                <h3>Tell us what you think</h3>
+                <p>Our culinary team reads every review and creates recipes based on your ratings. Tell us what you like
+                    and what you don't on the app. (Don't worry, our chefs can take the heat!)</p>
+            </div>
+            <div>
+                <h3>A more sustainable way to cook</h3>
+                <p>When you cook with Blue Apron, you're doing more than making delicious meals. Our meal kits include
+                    perfectly portioned ingredients to cut down on food waste in your home.</p>
+            </div>
+            <div>
+                <h3>We're sticklers for quality</h3>
+                <p>Our team of experts aim to source from suppliers that meet our standards for sustainable farming
+                    practices, high-quality produce, and unique ingredients.</p>
+            </div>
+        </div>
+    </div>
+    <div class="gfrth">
+        <div class="gfrth1">
+            <h1>“Blue Apron has truly changed my family's mealtime experience!”</h1>
+            <p>— @KARIE.MICHELLE</p>
+        </div>
+    </div>
+    <div class="gsxth">
+        <h1>Frequently Asked Questions</h1>
+        <div class="gsxth1">
+            <div>
+                <div>
+                    <h4>Does Blue Apron charge weekly?</h4>
+                    <p>Your payment information will be charged approximately 3 to 5 days before your delivery date,
+                        unless you decide to skip an order prior to the cutoff date.</p>
+                </div>
+                <div>
+                    <h4>How much is Blue Apron?</h4>
+                    <p>The cost of our plans varies depending on the number of servings you order and the type of meal
+                        kit. Find more specific information about our prices above.
+                    </p>
+                </div>
+                <div>
+                    <h4>When does Blue Apron deliver?</h4>
+                    <p>Once you create an account, you'll have the ability to choose which day of the week your Blue
+                        Apron meal kit arrives and adjust it each week as needed. In many locations, we deliver 7 days
+                        of the week. Once your order has shipped, you'll receive an email notification that includes
+                        your order details and tracking number. Learn More
+                    </p>
+                </div>
+                <div>
+                    <h4>Where does Blue Apron deliver?</h4>
+                    <p>We deliver to all locations in the continental United States.</p>
+                </div>
+                <div>
+                    <h4>Do I need to be home to accept my delivery?</h4>
+                    <p>Our refrigerated boxes are designed with ice packs and insulated liners to help ensure your
+                        ingredients stay fresh, even if you're not at home to accept the delivery. You should place all
+                        perishable items in the refrigerator upon delivery or immediately when you get home. If you ever
+                        have any questions about the safe handling of your food, please contact us at
+                        contact@blueapron.com. Learn More
+                    </p>
+                </div>
+                <div>
+                    <h4>Can I skip my delivery for a particular week?</h4>
+                    <p>Yes, you can skip upcoming deliveries up to 5 weeks in advance and skip any delivery until the
+                        order is processed (3-5 days before delivery date). You will receive a reminder before your
+                        order processes each week. To manage your deliveries, sign into your account and head to your
+                        Upcoming page. Learn More</p>
+                </div>
+                <div>
+                    <h4>Can I send Blue Apron as a gift?</h4>
+                    <p>Yes! You can purchase an e-gift card in any amount that you'd like, applicable towards weekly
+                        recurring deliveries on any meal plan. To purchase a meals gift card, go to our Gifts page and
+                        select “Meal” for “Gift Type.” We also have Blue Apron Wine e-gift cards available for purchase.
+                        Learn More</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Does Blue Apron offer diet-friendly or allergy-friendly recipes?
+                    </h4>
+                    <p>We accommodate a variety of dietary preferences in our recipes including vegetarian, carb
+                        conscious, and 600 calories or less. If you don't eat meat, you can select from our fish,
+                        seafood, or poultry offerings and personalize your menu each week based on your preferences.
+                        Allergens are designated in the online Nutrition Facts Panel for each recipe that can be viewed
+                        at your point-of-purchase and on the package label of ingredients that we deliver in your box.
+                        Note that all of our boxes are assembled in a facility that processes all eight major food
+                        allergens. Check with your healthcare provider to determine if Blue Apron is suitable for your
+                        lifestyle.</p>
+                </div>
+                <div>
+                    <h4>Where does Blue Apron source ingredients?</h4>
+                    <p>The quality and freshness of our ingredients are incredibly important to us, so we work directly
+                        with reputable suppliers that support sustainable practices and engage with artisanal purveyors
+                        and family-run farms for some of our specialty ingredients.</p>
+                </div>
+                <div>
+                    <h4>Is Blue Apron organic?</h4>
+                    <p>We're committed to sending high-quality ingredients in every delivery and support farmers who use
+                        sustainable farming practices. All of our ingredients are non-GMO, a requirement of organically
+                        certified foods. However, our recipes are not certified USDA organic.</p>
+                </div>
+                <div>
+                    <h4>How do I cancel my Blue Apron delivery?</h4>
+                    <p>Blue Apron is flexible and lets you skip weeks when you want, prior to each order being
+                        processed. To skip, simply sign in to your account and click 'Manage Delivery' on the order
+                        you'd like to skip. If you'd like to cancel your Blue Apron account altogether, you can contact
+                        our Customer Experience team and we'll provide you instructions on how to complete the process
+                        or you can do so here.</p>
+                </div>
+                <div>
+                    <h4>Can I recycle Blue Apron boxes?</h4>
+                    <p>Over 85% of Blue Apron packaging is recyclable by weight. We've teamed up with How2Recycle® to
+                        implement their industry-approved, easy-to-identify recycling label program that helps reduce
+                        the amount of recyclable material in our waste stream. Learn More</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .............................................. -->
+    <footer>
+        <div class="footer">
+            <div class="tbl">
+                <ul>
+                    <li>On The Menu</li>
+                    <li>Pricing</li>
+                    <li>Our Vision</li>
+                    <li>Wine</li>
+                    <li>Market</li>
+                    <li>Gifts</li>
+                    <li>Blog</li>
+                    <li>Cookbook</li>
+                </ul>
+                <ul>
+                    <li>Suppliers</li>
+                    <li>Affiliates</li>
+                    <li>Supply Chains Act</li>
+                    <li>Food Safety</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Our Team</li>
+                    <li>Investor Relations</li>
+                </ul>
+                <ul>
+                    <li>Military & Veterans</li>
+                    <li>Students</li>
+                    <li>Teachers</li>
+                    <li>Seniors (+55)</li>
+                    <li>Medical Staff</li>
+                    <li>First Responders</li>
+                </ul>
+                <ul>
+                    <li style="color: white;">Customer Support:</li>
+                    <li>Help Center & FAQ</li>
+                    <li>Covid-19 Updates</li>
+                    <li>contact@blueapron.com</li>
+                    <li>(646) 891-4349</li>
+
+                </ul>
+
+            </div>
+            <div class="ap">
+                <ul>
+                    <li style="color: white;">© Blue Apron, LLC 2022</li>
+                    <li>Do Not "Sell" My Info</li>
+                    <li>Ad Preferences</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li><img src="https://logodownload.org/wp-content/uploads/2017/05/disponivel-na-app-store-botao-5.png"
+                            alt=""></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/800px-Google_Play_Store_badge_EN.svg.png"
+                            alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <p>If you are using a screen reader and are having problems using this website, please call 1-844-462-8299 for
+            assistance.</p>
+    </footer>
+    <script>
+        let arr = [{ "head": '“Produce—fresh and very high-quality. Proteins—quality cuts and literally jumped out of the ocean. @blueapron, I am a total fan.”', "author": "— @LION_AWAKE" },
+        { "head": `“Blue Apron has truly changed my family's mealtime experience!”`, "author": "— ELIZABETH H." }, {
+            "head": '“I would never have tried these combinations in the meals. This has opened me up to new taste experiences.”', "author": "— BEVERLY H."
+        }, {
+            "head": '“Blue Apron has changed my life for the better. I am a working mom, and getting dinner on the table is convenient and delicious.”', "author": "— DELIA V."
+        }, { "head": '“Super impressed with each meal and learn lots of cool new techniques by following the recipes!”', "author": "— @LUKENOTJOHN" },
+        { "head": `“We tried one of the Blue Apron's Premium meals—it was FANTASTIC.”`, "author": "— @MABDACUMA" },
+        { "head": '“We have so much fun making these meals.”', "author": "— @LONGMONTDISH" },]
+
+        let i = 0;
+        setInterval(function () {
+
+            document.querySelector(".gfrth1 h1").innerText = arr[i].head;
+            document.querySelector(".gfrth1 p").innerText = arr[i].author;
+            i++;
+            if (i == arr.length) {
+                i = 0;
+            }
+        }, 2000)
+
+        let t1 = 1;
+        let t2 = 1;
+        let t3 = 1;
+        let t4 = 1;
+        let t5 = 1;
+        function myfun1() {
+            t1 = Math.abs(t1 - 1);
+            if (t1 == 0) {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1").style.borderColor = "blue";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1").style.borderWidth = "2px";
+
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/chef-favorites-icon-selected.svg";
+
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1").style.borderColor = "gray";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1").style.borderWidth = "0.5px";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd1 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/chef-favorites-icon.svg"
+            }
+
+        }
+        function myfun2() {
+            t2 = Math.abs(t2 - 1);
+            if (t2 == 0) {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2").style.borderColor = "blue";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2").style.borderWidth = "2px";
+
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/wellness-icon-selected.svg";
+
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2").style.borderColor = "gray";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2").style.borderWidth = "0.5px";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd2 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/wellness-icon.svg"
+            }
+
+        }
+        function myfun3() {
+            t3 = Math.abs(t3 - 1);
+            if (t3 == 0) {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3").style.borderColor = "blue";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3").style.borderWidth = "2px";
+
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/family-icon-selected.svg";
+
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3").style.borderColor = "gray";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3").style.borderWidth = "0.5px";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd3 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/family-icon.svg"
+            }
+
+        }
+        function myfun4() {
+            t4 = Math.abs(t4 - 1);
+            if (t4 == 0) {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4").style.borderColor = "blue";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4").style.borderWidth = "2px";
+
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/fast-easy-icon-selected.svg";
+
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4").style.borderColor = "gray";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4").style.borderWidth = "0.5px";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd4 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/fast-easy-icon.svg"
+            }
+
+        }
+        function myfun5() {
+            t5 = Math.abs(t5 - 1);
+            if (t5 == 0) {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5").style.borderColor = "blue";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5").style.borderWidth = "2px";
+
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/veggies-icon-selected.svg";
+
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5").style.borderColor = "gray";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5").style.borderWidth = "0.5px";
+                document.querySelector(".gsnd div:nth-child(1) .gsnd5 .icon img").src = "https://media.blueapron.com/assets/registration/icons/plansAndPricing/veggies-icon.svg"
+            }
+
+        }
+        let serve = 2;
+        let mealPerWeek = 2;
+
+        function serving(event) {
+            serve = event.target.value;
+            if (serve == 2) {
+                document.querySelector(".gsnd div:nth-child(2) .ps").innerText = "$11.99";
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(2) .ps").innerText = "$7.99";
+            }
+        }
+        function meal(event) {
+            mealPerWeek = event.target.value;
+            if (serve == 2) {
+                document.querySelector(".gsnd div:nth-child(2) .ps").innerText = "$11.99";
+                let z = 11.99;
+                let k = z * Number(mealPerWeek) + 9.99;
+                localStorage.setItem("total price", k);
+                document.querySelector(".gsnd div:nth-child(2) .pt").innerText = `$${k}`;
+            }
+            else {
+                document.querySelector(".gsnd div:nth-child(2) .ps").innerText = "$7.99"
+                let z = 7.99;
+                let k = z * Number(mealPerWeek) + 9.99;
+                localStorage.setItem("total price", k);
+                document.querySelector(".gsnd div:nth-child(2) .pt").innerText = `$${k}`;
+            }
+        }
+        function fun6() {
+            window.location = "./checkout.html"
+        }
+    </script>
+</body>
+
+
+</html>
