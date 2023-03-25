@@ -1,0 +1,110 @@
+.lfst {
+    width: 30%;
+    margin: auto;
+
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.lfst h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgba(16, 52, 108, 255);
+}
+
+.lfst p {
+    text-align: center;
+    color: gray;
+}
+
+.lfst form input {
+    width: 95%;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#login {
+    border: 1px solid black;
+    background-color: rgba(16, 52, 108, 255);
+    color: white;
+    border: none;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+.lfst form input:nth-child(9) {
+    background-color: rgba(16, 52, 108, 255);
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+
+footer {
+    background-color: rgba(16, 52, 108, 255);
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 30px;
+
+}
+
+
+.footer .tbl {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .tbl ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255);
+
+}
+
+.footer .tbl ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap {
+    text-align: right;
+}
+
+.footer .ap ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255)
+}
+
+.footer .ap ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap li img {
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}

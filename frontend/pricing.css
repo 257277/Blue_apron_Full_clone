@@ -1,0 +1,319 @@
+.gfst {
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gfst h1 {
+    color: rgba(16, 52, 108, 255)
+}
+
+.gfst p {
+    font-size: 20px;
+    color: gray;
+}
+
+.gsnd {
+
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gsnd div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.gsnd div:nth-child(1) h1 {
+    text-align: center;
+}
+
+.gsnd div:nth-child(1) button {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 0.5px solid gray;
+}
+
+
+.gsnd div:nth-child(1) button .icon {
+    width: 60px;
+
+
+}
+
+.gsnd div:nth-child(1) button .choice {
+    width: 70%;
+
+
+    text-align: left;
+}
+
+.gsnd div:nth-child(1) button .choice p:nth-child(1) {
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgba(16, 52, 108, 255);
+}
+
+.gsnd div:nth-child(1) button .choice p:nth-child(2) {
+    color: gray;
+    font-size: 15px;
+}
+
+
+
+.gsnd div:nth-child(2) h1 {
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gsnd div:nth-child(2)>div {
+
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.gsnd div:nth-child(2)>div h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.gsnd div:nth-child(2)>div input {
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid black;
+    border-radius: 0%;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.gsnd div:nth-child(2)>div input:hover {
+    background-color: rgba(16, 52, 108, 255);
+    color: white;
+}
+
+
+.gsnd div:nth-child(2)>div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(246, 244, 244);
+}
+
+
+
+.gsnd div:nth-child(2)>div:nth-child(4) div {
+
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.gsnd div:nth-child(2)>div:nth-child(5) {
+
+    flex-direction: column;
+    padding: 20%;
+    padding-top: 5%;
+    color: gray;
+    text-align: center;
+}
+
+.gsnd div:nth-child(2)>div:nth-child(5) button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: darkorange;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.gtrd {
+
+    height: 800px;
+    margin: auto;
+    background-color: rgb(0, 0, 147);
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.gtrd h2 {
+
+    font-size: 45px;
+    color: white;
+}
+
+.gtrd h1 {
+    font-size: 55px;
+    color: skyblue;
+}
+
+.gtrd1 {
+    width: 90%;
+    margin: auto;
+    height: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.gtrd1 div {
+
+    text-align: center;
+    padding: 10%;
+    color: white;
+}
+
+.gtrd1 div h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.gtrd1 div p {
+    font-size: 20px;
+}
+
+.gfrth {
+    height: 600px;
+    background-color: rgba(245, 246, 248, 255);
+}
+
+.gfrth1 {
+    width: 50%;
+    height: 60%;
+
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    padding-top: 5%;
+    color: rgba(16, 52, 108, 255);
+}
+
+.gfrth1 p {
+    margin-top: 60px;
+}
+
+
+.gsxth {
+
+    height: 1400px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.gsxth h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.gsxth .gsxth1 {
+    width: 90%;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gsxth .gsxth1 div {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+}
+
+.gsxth .gsxth1 div:nth-child(1) {
+    padding-right: 40px;
+}
+
+.gsxth .gsxth1 div h4 {
+    margin-top: 40px;
+    color: rgba(16, 52, 108, 255);
+    font-size: 25px;
+}
+
+.gsxth .gsxth1 div p {
+    color: gray;
+}
+
+footer {
+    background-color: rgba(16, 52, 108, 255);
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 30px;
+
+}
+
+
+.footer .tbl {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .tbl ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255);
+
+}
+
+.footer .tbl ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap {
+    text-align: right;
+}
+
+.footer .ap ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255)
+}
+
+.footer .ap ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap li img {
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}

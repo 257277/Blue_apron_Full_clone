@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./Nav/nav.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+            <a href="./index.html"> <img src="./image/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+            <div class="a">
+                <a href="./menu.html">MENU</a>
+                <a href="./pricing.html">PRICING</a>
+                <a href="./wine.html">WINE</a>
+                <a href="./gift.html">GIFTS</a>
+                <a href="./market.html">MARKET</a>
+                <a href="./cart.html">CART</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <button class="login"><a href="./login.html">LOGIN</a></button>
+            <button class="signup"><a href="./signup.html">SIGNUP</a></button>
+        </div>
+    </div>
+
+    <h1 style="margin-left: 40px;color:#002c9b">My Cart</h1>
+    <div id="cart">
+        <div id="cart_div">
+
+        </div>
+
+        <div id="details-div">
+            <div style="color:#002c9b ;">
+                <h2 id="coupon">CART ITEM</h2>
+            </div>
+            <div id="payment-detail">
+                <div>
+                    <h4>Item Total(MRP)</h4>
+                    <h4 id="total_MRP">0</h4>
+                </div>
+
+                <div>
+                    <h4>Shipping Fee</h4>
+                    <h4 id="shipping">0</h4>
+                </div>
+                <div style="color:#002c9b ;">
+                    <h2>To be paid</h2>
+                    <h2 id="total_paid">₹ 0</h2>
+                </div>
+
+            </div>
+            <div>
+                <button id="checkout_btn" onclick="myfun()">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="tbl">
+                <ul>
+                    <li>On The Menu</li>
+                    <li>Pricing</li>
+                    <li>Our Vision</li>
+                    <li>Wine</li>
+                    <li>Market</li>
+                    <li>Gifts</li>
+                    <li>Blog</li>
+                    <li>Cookbook</li>
+                </ul>
+                <ul>
+                    <li>Suppliers</li>
+                    <li>Affiliates</li>
+                    <li>Supply Chains Act</li>
+                    <li>Food Safety</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Our Team</li>
+                    <li>Investor Relations</li>
+                </ul>
+                <ul>
+                    <li>Military & Veterans</li>
+                    <li>Students</li>
+                    <li>Teachers</li>
+                    <li>Seniors (+55)</li>
+                    <li>Medical Staff</li>
+                    <li>First Responders</li>
+                </ul>
+                <ul>
+                    <li style="color: white;">Customer Support:</li>
+                    <li>Help Center & FAQ</li>
+                    <li>Covid-19 Updates</li>
+                    <li>contact@blueapron.com</li>
+                    <li>(646) 891-4349</li>
+
+                </ul>
+
+            </div>
+            <div class="ap">
+                <ul>
+                    <li style="color: white;">© Blue Apron, LLC 2022</li>
+                    <li>Do Not "Sell" My Info</li>
+                    <li>Ad Preferences</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li><img src="https://logodownload.org/wp-content/uploads/2017/05/disponivel-na-app-store-botao-5.png"
+                            alt=""></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/800px-Google_Play_Store_badge_EN.svg.png"
+                            alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <p>If you are using a screen reader and are having problems using this website, please call 1-844-462-8299 for
+            assistance.</p>
+    </footer>
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("Cart"));
+        let price = 0;
+
+
+        let arr1 = arr.map((item) => {
+            price += item.price;
+            return `<div>
+            <div> <img src="${item.image}"> </div>
+            <div>
+                <h1>${item.title} </h1>
+                <p>Price ${item.price} </p>
+                <button id="${item._id}">Remove</button>
+                </div>
+
+            </div>`
+        })
+        document.querySelector("#cart_div").innerHTML = ""
+        let arr2 = arr1.join("");
+        document.querySelector("#cart_div").innerHTML = arr2;
+
+
+
+        function myfun() {
+            localStorage.setItem("total price", JSON.stringify(price));
+            window.location = "./checkout.html"
+        }
+        document.querySelector("#total_MRP").innerText = `$${price}`;
+        document.querySelector("#shipping").innerText = "$9.99"
+        document.querySelector("#total_paid").innerText = `$${price + 9.99}`
+        let butnarrs = document.querySelectorAll("#cart_div div button");
+        for (let butnarr of butnarrs) {
+            butnarr.addEventListener("click", (event) => {
+                let arr = JSON.parse(localStorage.getItem("Cart")) || [];
+                let id = event.target.id;
+                console.log(id);
+                let arr3 = [];
+                arr.map((item) => {
+                    if (item._id != id) {
+                        arr3.push(item);
+                    }
+                })
+
+                localStorage.setItem("Cart", "");
+                localStorage.setItem("Cart", JSON.stringify(arr3));
+                let arr1 = arr.map((item) => {
+                    price += item.price;
+                    return `<div>
+            <div> <img src="${item.image}"> </div>
+            <div>
+                <h1>${item.title} </h1>
+                <p>Price ${item.price} </p>
+                <button id="${item._id}">Remove</button>
+                </div>
+
+            </div>`
+                })
+                document.querySelector("#cart_div").innerHTML = ""
+                let arr2 = arr1.join("");
+                document.querySelector("#cart_div").innerHTML = arr2;
+                window.location = "./cart.html"
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>

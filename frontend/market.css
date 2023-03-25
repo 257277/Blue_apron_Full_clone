@@ -1,0 +1,151 @@
+.marfst {
+    height: 60px;
+    border: 0.5px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.marfst .marfst1 {
+
+    display: flex;
+    margin-left: 10%;
+    font-size: 20px;
+    color: gray;
+
+}
+
+.marfst .marfst1 p {
+    margin-right: 40px;
+
+}
+
+.marsnd {
+
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.swiper-slider1 {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slider1 div:nth-child(2) img {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.swiper-slider1 div:nth-child(1) {
+    padding: 20px;
+}
+
+.swiper-slider1 div:nth-child(1) h1 {
+    color: #002c9b;
+    margin-bottom: 20px;
+}
+
+.swiper-slider1 div:nth-child(1) p {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.swiper-slider1 div:nth-child(1) button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #002c9b;
+    color: white;
+}
+
+.marthrd {
+
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.marthrd div {
+    width: 80%;
+
+    padding: 2%;
+    height: 85%;
+}
+
+.marthrd div img {
+    width: 100%;
+    height: 80%;
+
+}
+
+.marthrd div h3 {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(16, 52, 108, 255);
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer {
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+
+.footer .tbl {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .tbl ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255);
+
+}
+
+.footer .tbl ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap {
+    text-align: right;
+}
+
+.footer .ap ul {
+    list-style-type: none;
+    color: rgba(161, 188, 230, 255)
+}
+
+.footer .ap ul li {
+    margin-bottom: 20px;
+}
+
+.footer .ap li img {
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}

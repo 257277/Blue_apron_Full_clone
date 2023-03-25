@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://192.168.1.27:5500/cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./Cart Page_files/cart.css">
+    <link rel="stylesheet" href="./Cart Page_files/nav.css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1094.0" data-gr-ext-installed="">
+    <div class="nav">
+        <div class="left">
+            <a href="http://192.168.1.27:5500/index.html"> <img src="./Cart Page_files/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+            <div class="a">
+                <a href="http://192.168.1.27:5500/menu.html">MENU</a>
+                <a href="http://192.168.1.27:5500/pricing.html">PRICING</a>
+                <a href="http://192.168.1.27:5500/wine.html">WINE</a>
+                <a href="http://192.168.1.27:5500/gift.html">GIFTS</a>
+                <a href="http://192.168.1.27:5500/market.html">MARKET</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <button class="login"><a href="http://192.168.1.27:5500/login.html">LOGIN</a></button>
+            <button class="signup"><a href="http://192.168.1.27:5500/signup.html">SIGNUP</a></button>
+        </div>
+    </div>
+
+    <h1 style="margin-left: 40px;color:#002c9b">My Cart</h1>
+    <div id="cart">
+        <div id="cart_div"><div>
+            <div> <img src="./Cart Page_files/6-Pack-Brut-Sparking-Wine-Bundle_203.jpg"> </div>
+            <div>
+                <h1>Blue Barrel Sparkling Brut 6 Pack </h1>
+                <p>Price 124.99 </p>
+                </div>
+
+            </div><div>
+            <div> <img src="./Cart Page_files/Diner-Party-Essentials_750ml_3bottles_361.jpg"> </div>
+            <div>
+                <h1>Dinner Party Essentials - 3 Pack, 750ml size </h1>
+                <p>Price 49.99 </p>
+                </div>
+
+            </div></div>
+
+        <div id="details-div">
+
+            <div id="payment-detail">
+                <div>
+                    <h4>Item Total(MRP)</h4>
+                    <h4 id="total_MRP">0</h4>
+                </div>
+
+                <div>
+                    <h4>Shipping Fee</h4>
+                    <h4 id="shipping">0</h4>
+                </div>
+                <div style="color:#002c9b ;">
+                    <h2>To be paid</h2>
+                    <h2 id="total_paid">₹ 0</h2>
+                </div>
+                <div style="background-color: #EFF6FF; ">
+                    <h3>Total Savings</h3>
+                    <h3 style="color: #002c9b;" id="total_save">₹ 0</h3>
+                </div>
+            </div>
+            <div>
+                <button id="checkout_btn" onclick="myfun()">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("Cart"));
+        let price = 0;
+
+        let arr1 = arr.map((item) => {
+            price += item.price;
+            return `<div>
+            <div> <img src="${item.image}"> </div>
+            <div>
+                <h1>${item.title} </h1>
+                <p>Price ${item.price} </p>
+                </div>
+
+            </div>`
+        })
+
+        let arr2 = arr1.join("");
+        document.querySelector("#cart_div").innerHTML = arr2;
+
+        function myfun() {
+            window.location = "./checkout.html"
+        }
+        document.querySelector("")
+
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

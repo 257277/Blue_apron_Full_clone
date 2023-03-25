@@ -1,0 +1,158 @@
+ * {
+     margin: 0%;
+ }
+
+
+ nav {
+     height: 80px;
+     width: 100%;
+     border-bottom: 0.5px solid gray;
+ }
+
+ nav img {
+     height: 100%;
+     margin-left: 100px;
+ }
+
+ .sfst {
+     background-image: url("https://media.blueapron.com/assets/signup/landing/background-landing-signup.jpg?quality=80&width=1440");
+     width: 100%;
+     height: 750px;
+     background-size: cover;
+
+ }
+
+ .sfst .nt {
+     width: 60%;
+     margin: auto;
+     height: 600px;
+     background-color: white;
+     position: absolute;
+     left: 20%;
+     top: 15%;
+     padding: 40px;
+ }
+
+ .nt1 {
+
+     width: 80%;
+     margin: auto;
+     text-align: center;
+ }
+
+ .nt1 h1 {
+     color: rgb(1, 1, 159);
+ }
+
+ .nt1 p:nth-child(1) {
+     font-size: 17px;
+
+ }
+
+ .nt1 p:nth-child(3) {
+     margin-top: 10px;
+     color: gray;
+ }
+
+ .nt2 {
+     width: 80%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 50px;
+ }
+
+ .nt2 div:nth-child(1) {
+
+     width: 30%;
+     padding: 20px;
+     margin-top: 20px;
+     font-size: 18px;
+ }
+
+ .nt2 div:nth-child(1) div {
+     margin-top: 15px;
+ }
+
+ .nt2 div:nth-child(1) div h3 {
+     font-size: 15px;
+ }
+
+ .nt2 div:nth-child(1) div p {
+     font-size: 15px;
+ }
+
+ .nt2>div:nth-child(2) {
+
+     width: 60%;
+
+ }
+
+ .nt2>div:nth-child(2) form {
+     font-size: 20px;
+     margin-bottom: 15px;
+ }
+
+
+
+ .nt2>div:nth-child(2) form input {
+     width: 70%;
+     height: 40px;
+     font-size: 20px;
+     margin-top: 15px;
+ }
+
+ /* .nt2>div:nth-child(2) form input:nth-child(16)  */
+ #Signup {
+     background-color: rgb(255, 89, 0);
+     border: none;
+     color: white;
+     width: 73%;
+     border-radius: 5px;
+     height: 40px;
+     margin-top: 20px;
+ }
+
+
+ .ssnd {
+
+     width: 80%;
+     margin: auto;
+     height: 200px;
+     margin-top: 50px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .ssnd div {
+     border: 0.5px solid gray;
+     width: 20%;
+     text-align: center;
+     padding: 60px;
+ }
+
+ .ssnd div p {
+     color: gray;
+     margin-top: 10px;
+ }
+
+ footer {
+     width: 100%;
+     height: 60px;
+     background-color: rgb(1, 1, 159);
+     margin-top: 15px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: white;
+ }
+
+ footer div:nth-child(2) {
+     display: flex;
+
+ }
+
+ footer div:nth-child(2) p {
+     margin-left: 30px;
+     color: rgba(161, 188, 230, 255);
+ }

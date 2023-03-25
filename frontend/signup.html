@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signup.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><img src="./image/black-apron-restaurant-vector-logo-design-2JAKX59.jpg" alt=""></a>
+    </nav>
+    <div class="sfst">
+        <div class="nt">
+            <div class="nt1">
+                <h1>Get Started</h1>
+                <p>Farm-fresh ingredients and delicious recipes delivered weekly to your home</p>
+                <p>By submiting, you agree to our Terms of Use and consent to our Privacy Policy</p>
+            </div>
+            <div class="nt2">
+                <div>
+                    <h3>HOW IT WORKS</h3>
+                    <div>
+                        <h3>Choose your Meals</h3>
+                        <p>Our chef-designed recipes include balanced Mediterranean meals, quick one-pan dinners, and
+                            top-rated customer favorites.</p>
+                    </div>
+                    <div>
+                        <h3>Unpack your box</h3>
+                        <p>We guarantee the freshness of all our ingredients and deliver them in an insulated box right
+                            to your door.</p>
+                    </div>
+                    <div>
+                        <h3>Create Magic</h3>
+                        <p>Following our step-by-step instructions you'll experience the magic of cooking recipes that
+                            our chefs create with your family's tastes in mind.</p>
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name">
+                        <br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email">
+                        <br>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password">
+                        <br>
+                        <label for="Address">Address</label><br>
+                        <input type="text" id="address">
+                    </form>
+                    <button id="Signup">Submit</button>
+                    <p>Already have an account?<a href="./login.html"> Log In </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ssnd">
+        <div>
+            <h3>No Commitment</h3>
+            <p>Receive your delivery whenever it's convenient, and skipping or canceling is easy.</p>
+        </div>
+        <div>
+            <h3>Personalized Menus</h3>
+            <p>Select from our Signature or Signature for 4 plans. Tell us your dietary preferences and we'll
+                personalize the menus you receive.</p>
+        </div>
+        <div>
+            <h3>Convenient Delivery</h3>
+            <p>Ingredients are carefully packaged in a refrigerated box so food stays fresh even if you're not home when
+                we deliver.</p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>© Blue Apron, LLC 2022 | A better way to cook</p>
+        </div>
+        <div>
+            <p>Don't "Sell" My Data</p>
+            <p> Ad Preferences</p>
+            <p> Privacy Policy </p>
+            <p> Terms of Use</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.querySelector("#Signup").addEventListener("click", () => {
+        let email = document.querySelector("#email").value;
+        let name = document.querySelector("#name").value;
+        let password = document.querySelector("#password").value;
+        let address = document.querySelector("#address").value;
+        let obj = { name, email, password, address };
+        console.log(obj);
+        sgn(obj);
+    })
+    let url = "https://ill-stole-duck.cyclic.app/user/register"
+    let sgn = async (obj) => {
+
+        let res = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(obj),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => res.json())
+            .then(res => alert(res))
+            .catch(err => alert(err))
+    }
+
+</script>
+
+</html>
